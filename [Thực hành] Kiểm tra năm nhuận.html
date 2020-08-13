@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        input{
+            margin: 10px 5px;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <label>NHAP NAM CAN KIEM TRA: <br>
+        <input type="number" id="nam">
+    </label><br>
+
+    <input type="button" value="kiemtra" onclick="kiemtra()" >
+
+
+</form>
+<script>
+
+    function kiemtra() {
+        let nam;
+        nam=document.getElementById("nam").value;
+        if (((nam%4===0)&&(nam%100!==0))||((nam%100===0)&&(nam%400===0))) {
+            alert('nam nhuan');
+        }
+        else {
+            alert('nam ko nhuan');
+        }
+        
+    }
+</script>
+</body>
+</html>

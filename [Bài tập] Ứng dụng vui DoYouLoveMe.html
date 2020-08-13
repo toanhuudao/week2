@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3><b>Do you love me</b></h3>
+<input style="margin: 5px 10px" type="button" value="Yes" onclick="alert('dung roi')">
+<input id="No" style="margin:  5px 10px; position: absolute; top: 60px ; left: 60px;" type="button" value="No" onmouseover="dichchuyen();">
+
+
+<script>
+
+
+    function dichchuyen() {
+        let b=Math.floor(Math.random()*1000+1) +'px';
+         let a=document.getElementById('No').style.left=b;
+        let c=Math.floor(Math.random()*500+1) +'px';
+         a=document.getElementById('No').style.top=c;
+    }
+
+
+</script>
+
+</body>
+</html>

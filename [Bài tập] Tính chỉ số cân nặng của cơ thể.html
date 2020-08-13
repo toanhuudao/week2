@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=prompt('nhap can nang:');
+    let b=prompt('nhap chieu cao');
+    let c=parseFloat(a)/(parseFloat(b)*parseFloat(b));
+    if (c<18.5){
+        alert('underweight');
+    }
+    else if(c>=30){
+        alert('Obese');
+    }
+    else if(c<=30&&c>=25){
+        alert('overweight');
+    }
+    else {
+        alert('normal');
+    }
+
+</script>
+</body>
+</html>

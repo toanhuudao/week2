@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i;
+    for ( i=0;;i++){
+        if ((dayFibo(i)%5)===0)
+
+            break;
+    }
+    alert(dayFibo(i));
+
+
+
+   function dayFibo(a) {
+    if (a<=1)
+        return 1;
+    else
+        return dayFibo(a-1)+dayFibo(a-2);
+   }
+</script>
+</body>
+</html>

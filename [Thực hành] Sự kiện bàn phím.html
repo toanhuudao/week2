@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload='docReady()'>
+<img id="nobita" src="picture/2.png" alt="" style="position: absolute; left: 0;top: 0; height: 100px;width: 80px">
+<script>
+    function up() {
+        let element=document.getElementById("nobita");
+        element.style.top=parseInt(element.style.top)-5+'px';
+    }
+    function down() {
+        let element=document.getElementById('nobita');
+        element.style.top=parseInt(element.style.top)+5+'px';
+    }
+    function left() {
+        let element=document.getElementById('nobita');
+        element.style.left=parseInt(element.style.left)-5+'px';
+    }
+    function right() {
+        let element=document.getElementById('nobita');
+        element.style.left=parseInt(element.style.left)+5+'px';
+    }
+    function dichuyen(e) {
+        switch (e.keyCode) {
+            case 37:
+                left();
+                break;
+            case 39:
+                right();
+                break;
+            case 38:
+                up();
+                break;
+            case 40:
+                down();
+                break;
+
+
+        }
+
+    }
+
+    function docReady() {
+        window.addEventListener('keydown',dichuyen);
+
+    }
+
+</script>
+
+
+
+
+</body>
+</html>

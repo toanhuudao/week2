@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num=parseInt(prompt('nhap so can tinh'));
+    alert(tinhGiaiThua(num));
+    function tinhGiaiThua(num) {
+        if (num===1)
+            return 1;
+        else
+            return tinhGiaiThua(num-1)*num;
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let A;
+    A="<table>"
+    for (let i=1;i<=9;i++){
+        A=A+'<tr>';
+        for (let j=1;j<=9;j++){
+            A=A+ "<td>"+i+"x"+j +"="+i*j +"</td>";
+        }
+        A=A+"</tr>"
+    }
+    A=A+"</table>";
+    document.write(A);
+</script>
+</body>
+</html>

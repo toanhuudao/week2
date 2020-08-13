@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        input{
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+<label>Good
+    <input type="checkbox" id="good" onclick="kiemTra1();">
+</label>
+<label>Cheap
+    <input type="checkbox" id="cheap" onclick="kiemTra2();" >
+</label>
+<label>Fast
+    <input type="checkbox" id="fast" onclick="kiemTra3();">
+</label>
+<script>
+
+    function kiemTra1() {
+
+        if(document.getElementById('cheap').checked===true){
+            document.getElementById('fast').checked=false;
+        }
+        else if(document.getElementById('fast').checked===true){
+            document.getElementById('cheap').checked=false;
+        }
+    }function kiemTra2() {
+
+        if(document.getElementById('good').checked===true){
+            document.getElementById('fast').checked=false;
+        }
+        else if(document.getElementById('fast').checked===true){
+            document.getElementById('good').checked=false;
+        }
+    }function kiemTra3() {
+
+        if(document.getElementById('cheap').checked===true){
+            document.getElementById('good').checked=false;
+        }
+        else if(document.getElementById('cheap').checked===true){
+            document.getElementById('good').checked=false;
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

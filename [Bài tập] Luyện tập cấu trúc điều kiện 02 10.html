@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soDien=parseFloat(prompt('nhap so dien:'));
+    if (soDien<50)
+        alert('tien dien:'+soDien*1600+'VND');
+    else if(soDien>50&&soDien<100)
+        alert('tien dien'+ (50*1600+(soDien-50)*1800)+'VND');
+    else
+    alert('tien dien'+(50*1600+50*1800+(soDien-100)*3000)+'VND');
+
+</script>
+</body>
+</html>

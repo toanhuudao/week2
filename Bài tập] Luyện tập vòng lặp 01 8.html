@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="button" value="choi" onclick="startGame();"><br>
+    <input type="reset" value="reset">
+</form>
+<script>
+    function startGame() {
+        let minNum=parseInt(prompt('nhap so be nhat'));
+        let maxNum=parseInt(prompt('nhap so lon nhat'));
+        let ramdom=Math.floor(Math.random()*(maxNum-minNum+1))+minNum;
+        let choiceNum=parseInt(prompt('nhap so ban chon'));
+        if (ramdom===choiceNum){
+            alert('you win');
+        }
+        else
+         alert('you lose');
+
+    }
+
+
+</script>
+</body>
+</html>

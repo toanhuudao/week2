@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <label>Amount <br>
+        <input type="number" id="tiennhap" >
+    </label>
+    <br>
+
+<label for="tientruoc">From Curency :</label> <br><select name="" id="tientruoc" >
+    <option value="23000">VND</option>
+    <option value="1">USD</option>
+    <option value="106">YEN</option>
+</select><br>
+    <label for="tiensau">To Curency</label><br><select name="" id="tiensau">
+    <option value="1">USD</option>
+    <option value="23000">VND</option>
+    <option value="106">YEN</option>
+</select><br>
+    <input type="button" name="convert" value="convert" onclick="tinh();" ><br>
+</form>
+<p id="result">result:</p>
+
+<script>
+ function tinh(){
+     let tien1 , tien2 , tien3, result;
+    tien1= parseFloat(document.getElementById("tiennhap").value) ;
+    tien2=parseFloat(document.getElementById('tientruoc').value);
+    tien3=parseFloat(document.getElementById('tiensau').value);
+
+    result=tien1*(tien3/tien2);
+    alert(result);
+
+
+
+
+
+
+
+
+
+
+}
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number;
+    number="<table>";
+    for (let i=1;i<10;i++){
+        number=number+"<tr>";
+        for (let j=1;j<10;j++){
+            number=number+'<td>'+ i*j+'</td>';
+        }
+        number=number+'</tr>';
+
+    }
+    number=number+'</table>';
+    document.write(number);
+</script>
+</body>
+</html>
